@@ -1,9 +1,9 @@
 module Tester(A);
 output reg A;
 
-//valores iniciales
 initial begin
 
+//Modulo probador donde se indica lo que va a pasar durante la prueba
   $display("Prueba 1, A=0");
   A<=0;
   #10;
@@ -12,6 +12,6 @@ initial begin
   A<=1;
   #10;
 
-	$monitor("A los %g ns, A: %b, Y: %d, cuenta %g, potencia %g", $time, A, Not_1.Q, Not_1.Counter,Not_1.Power);
+	$monitor("Resultado final de la prueba en tiempo de: %g ps, A: %b, Q: %d, Numero de cambios: %g, Potencia consumida: %g", $time, A, Not_1.Q, Not_1.Counter,Not_1.Power);
   end
 endmodule

@@ -9,6 +9,7 @@ initial
   begin
   $dumpfile("Not.vcd");
   $dumpvars;
+  //Se imprimen los datos de cada entrada/salida
     $display ("A Q");
     $monitor (" %b %b",
    A, Q);
