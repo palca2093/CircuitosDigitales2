@@ -8,4 +8,14 @@ vvp Registro4B
 
 gtkwave Registro4B.vcd 
 
+____________________________________________________________________________________________________
+Con la potencia y los retardos tuve problemas, ya que con retardos el registro no funciona :(
+____________________________________________________________________________________________________
 
+VERIFICADOR 
+
+iverilog -o Verificador Verificador.v VTB.v Tester.v
+
+vvp Verificador
+
+gtkwave Verificador.vcd
