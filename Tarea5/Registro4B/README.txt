@@ -1,16 +1,17 @@
 INSTRUCCIONES DE PRUEBAS
 
-REGISTRO DES 4B
 
-iverilog -o Registro4B R4B.v Tester.v TB.v
+- EJECUTAR EL SINTETIZAR.BAT
 
-vvp Registro4B
+- ESO DEBIO GENERAR EL SINTETIZADO.V
 
-gtkwave Registro4B.vcd 
+- SE LE HACE EL INCLUDE DE CMOSLIB Y SE CAMBIA EL NOMBRE DEL MODULO
 
-____________________________________________________________________________________________________
-Con la potencia y los retardos tuve problemas, ya que con retardos el registro no funciona :(
-____________________________________________________________________________________________________
+`include "cmos_cells.v"
+
+- SE LE CAMBIAN LOS NOMBRES A LAS ENTRADAS DEL MODULO EN VTB.v (PORQUE ES EL PROBADOR QUE USE EN LA TAREA 4)
+
+
 
 VERIFICADOR 
 
