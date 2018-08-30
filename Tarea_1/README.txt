@@ -1,0 +1,20 @@
+Ejecucion:
+_____________________________________________________________________________________________________
+make
+
+Compila y genera un ejecutable usando los .v en el archivo de texto files.txt
+
+_______________________________________________________________________________________________________
+make run
+
+Ejecuta el binario generado por make, así como el .vcd para su posterior visualización con gtkwave
+
+________________________________________________________________________________________________________
+make wave
+
+Abre el .vcd para su visualización.
+
+_________________________________________________________________________________________________________
+make yosys
+
+Sintetiza el .v usando la receta provista por el archivo yoscript.txt

@@ -1,0 +1,15 @@
+read_verilog boton.v
+hierarchy -check -top boton
+proc;
+opt;
+fsm;
+opt;
+memory;
+opt;
+techmap;
+opt;
+write_verilog rtlil.v
+dfflibmap -liberty cmos_cells.lib;
+abc -liberty cmos_cells.lib;
+clean
+write_verilog sintetizado.v
