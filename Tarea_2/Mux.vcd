@@ -1,0 +1,61 @@
+$date
+	Fri Sep 07 22:59:36 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 1 ! sel $end
+$var wire 1 " reset $end
+$var wire 4 # muxOut [3:0] $end
+$var wire 4 $ din_1 [3:0] $end
+$var wire 4 % din_0 [3:0] $end
+$scope module M1 $end
+$var wire 1 ! sel $end
+$var wire 1 " reset $end
+$var wire 4 & din_1 [3:0] $end
+$var wire 4 ' din_0 [3:0] $end
+$var reg 4 ( muxOut [3:0] $end
+$upscope $end
+$scope module T1 $end
+$var reg 4 ) din_0 [3:0] $end
+$var reg 4 * din_1 [3:0] $end
+$var reg 1 " reset $end
+$var reg 1 ! sel $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 *
+b1010 )
+b1010 (
+b1010 '
+b110 &
+b1010 %
+b110 $
+b1010 #
+0"
+0!
+$end
+#40000
+b110 #
+b110 (
+1!
+#80000
+b0 #
+b0 (
+b0 $
+b0 &
+b0 *
+#120000
+b1 #
+b1 (
+0!
+b1 %
+b1 '
+b1 )
+#160000

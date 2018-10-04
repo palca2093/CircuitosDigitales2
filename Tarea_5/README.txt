@@ -1,6 +1,6 @@
 Ejecucion:
 _____________________________________________________________________________________________________
-make
+make verilog
 
 Compila y genera un ejecutable usando los .v en el archivo de texto files.txt
 
@@ -15,6 +15,7 @@ make wave
 Abre el .vcd para su visualización.
 
 _________________________________________________________________________________________________________
+
 make yosys
 
-Sintetiza el .v usando la receta provista por el archivo yoscript.txt
+ejecuta la sintesis del progama

@@ -1,0 +1,15 @@
+read_verilog Mux.v
+hierarchy -check -top mux
+proc;
+opt;
+fsm;
+opt;
+memory;
+opt;
+techmap;
+opt;
+write_verilog rtlil.v
+
+abc -liberty cmos_cells.lib;
+clean
+write_verilog sintetizado.v
