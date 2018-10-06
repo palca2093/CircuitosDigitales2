@@ -12,6 +12,8 @@ module mux(
 
   always @(*)
     begin
+    muxOut = 0;
+    v_out = 0;
       if(!reset)
         begin
           if(sel==0)

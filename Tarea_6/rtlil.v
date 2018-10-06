@@ -9,21 +9,8 @@ module mux(sel, reset, din_0, v_0, din_1, v_1, muxOut, v_out);
   wire _01_;
   (* src = "Mux.v:13" *)
   wire [3:0] _02_;
-  wire _03_;
-  wire _04_;
-  wire _05_;
-  wire _06_;
-  wire _07_;
-  wire _08_;
-  wire _09_;
-  wire _10_;
-  wire _11_;
-  wire _12_;
-  wire _13_;
-  wire _14_;
-  wire _15_;
-  (* src = "Mux.v:17" *)
-  wire _16_;
+  (* src = "Mux.v:13" *)
+  wire [3:0] _03_;
   (* src = "Mux.v:5" *)
   input [3:0] din_0;
   (* src = "Mux.v:7" *)
@@ -40,52 +27,22 @@ module mux(sel, reset, din_0, v_0, din_1, v_1, muxOut, v_out);
   input v_1;
   (* src = "Mux.v:10" *)
   output v_out;
-  assign _09_ = _14_ | _15_;
-  assign _01_ = sel ? (* src = "Mux.v:17" *) v_1 : v_0;
-  assign _02_[0] = sel ? (* src = "Mux.v:17" *) din_1[0] : din_0[0];
-  assign _02_[1] = sel ? (* src = "Mux.v:17" *) din_1[1] : din_0[1];
-  assign _02_[2] = sel ? (* src = "Mux.v:17" *) din_1[2] : din_0[2];
-  assign _02_[3] = sel ? (* src = "Mux.v:17" *) din_1[3] : din_0[3];
-  assign _00_[0] = reset ? (* src = "Mux.v:15" *) 1'b0 : _02_[0];
-  assign _00_[1] = reset ? (* src = "Mux.v:15" *) 1'b0 : _02_[1];
-  assign _00_[2] = reset ? (* src = "Mux.v:15" *) 1'b0 : _02_[2];
-  assign _00_[3] = reset ? (* src = "Mux.v:15" *) 1'b0 : _02_[3];
-  assign _16_ = ~(* src = "Mux.v:17" *) sel;
-  assign _05_ = ~v_1;
-  assign _06_ = ~v_0;
-  assign _03_ = ~_11_;
-  assign _04_ = ~reset;
-  \$_DLATCH_P_  _32_ (
-    .D(_00_[0]),
-    .E(_03_),
-    .Q(muxOut[0])
-  );
-  \$_DLATCH_P_  _33_ (
-    .D(_00_[1]),
-    .E(_03_),
-    .Q(muxOut[1])
-  );
-  \$_DLATCH_P_  _34_ (
-    .D(_00_[2]),
-    .E(_03_),
-    .Q(muxOut[2])
-  );
-  \$_DLATCH_P_  _35_ (
-    .D(_00_[3]),
-    .E(_03_),
-    .Q(muxOut[3])
-  );
-  \$_DLATCH_P_  _36_ (
-    .D(_01_),
-    .E(_04_),
-    .Q(v_out)
-  );
-  assign _12_ = sel & _05_;
-  assign _13_ = _04_ & _12_;
-  assign _15_ = sel & _13_;
-  assign _07_ = _16_ & _06_;
-  assign _08_ = _04_ & _07_;
-  assign _14_ = _16_ & _08_;
-  assign _10_ = _04_ & _09_;
-  assign _11_ = _04_ & _10_;
+  assign _03_[0] = v_1 ? (* src = "Mux.v:33" *) din_1[0] : 1'b0;
+  assign _03_[1] = v_1 ? (* src = "Mux.v:33" *) din_1[1] : 1'b0;
+  assign _03_[2] = v_1 ? (* src = "Mux.v:33" *) din_1[2] : 1'b0;
+  assign _03_[3] = v_1 ? (* src = "Mux.v:33" *) din_1[3] : 1'b0;
+  assign _02_[0] = v_0 ? (* src = "Mux.v:21" *) din_0[0] : 1'b0;
+  assign _02_[1] = v_0 ? (* src = "Mux.v:21" *) din_0[1] : 1'b0;
+  assign _02_[2] = v_0 ? (* src = "Mux.v:21" *) din_0[2] : 1'b0;
+  assign _02_[3] = v_0 ? (* src = "Mux.v:21" *) din_0[3] : 1'b0;
+  assign _01_ = sel ? (* src = "Mux.v:19" *) v_1 : v_0;
+  assign _00_[0] = sel ? (* src = "Mux.v:19" *) _03_[0] : _02_[0];
+  assign _00_[1] = sel ? (* src = "Mux.v:19" *) _03_[1] : _02_[1];
+  assign _00_[2] = sel ? (* src = "Mux.v:19" *) _03_[2] : _02_[2];
+  assign _00_[3] = sel ? (* src = "Mux.v:19" *) _03_[3] : _02_[3];
+  assign v_out = reset ? (* src = "Mux.v:17" *) 1'b0 : _01_;
+  assign muxOut[0] = reset ? (* src = "Mux.v:17" *) 1'b0 : _00_[0];
+  assign muxOut[1] = reset ? (* src = "Mux.v:17" *) 1'b0 : _00_[1];
+  assign muxOut[2] = reset ? (* src = "Mux.v:17" *) 1'b0 : _00_[2];
+  assign muxOut[3] = reset ? (* src = "Mux.v:17" *) 1'b0 : _00_[3];
 endmodule
