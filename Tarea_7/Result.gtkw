@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Mon Nov 05 01:44:01 2018
+[*]
+[dumpfile] "C:\Users\palca\OneDrive\Documents\GitHub\CircuitosDigitales2\Tarea_7\FSM.vcd"
+[dumpfile_mtime] "Mon Nov 05 01:40:35 2018"
+[dumpfile_size] 14155
+[savefile] "C:\Users\palca\OneDrive\Documents\GitHub\CircuitosDigitales2\Tarea_7\Result.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-15.910092 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Generator_TB.
+[treeopen] Generator_TB.FSM_cond.
+[treeopen] Generator_TB.FSM_cond.MEM[0].
+[treeopen] Generator_TB.FSM_est.
+[treeopen] Generator_TB.FSM_est.MEM[0].
+[sst_width] 197
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@200
+-
+-Conductual
+@28
+Generator_TB.FSM_cond.clk
+Generator_TB.FSM_cond.reset
+@22
+Generator_TB.FSM_cond.data_in[15:0]
+Generator_TB.FSM_cond.data_out[15:0]
+Generator_TB.FSM_cond.WORD_NUM[3:0]
+Generator_TB.FSM_cond.MEM[0].mem_unit.next_state[3:0]
+Generator_TB.FSM_cond.MEM[0].mem_unit.state[3:0]
+@200
+-
+-Estructural
+@28
+Generator_TB.FSM_est.clk
+Generator_TB.FSM_est.reset
+@22
+Generator_TB.FSM_est.data_in[15:0]
+Generator_TB.FSM_est.data_out[15:0]
+Generator_TB.FSM_est.WORD_NUM[3:0]
+Generator_TB.FSM_est.MEM[0].mem_unit.next_state[3:0]
+@23
+Generator_TB.FSM_est.MEM[0].mem_unit.state[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,7 @@
+read_verilog Sumador_pipe.v
+hierarchy -check -top Sumador_pipe
+write_verilog rtlil.v
+dfflibmap -liberty cmos_cells.lib;
+abc -liberty cmos_cells.lib;
+clean
+write_verilog Sumador_pipe_est.v

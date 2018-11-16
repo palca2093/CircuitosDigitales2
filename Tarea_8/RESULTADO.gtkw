@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Mon Nov 05 03:20:35 2018
+[*]
+[dumpfile] "C:\Users\palca\OneDrive\Documents\GitHub\CircuitosDigitales2\Tarea_8\Gray.vcd"
+[dumpfile_mtime] "Mon Nov 05 03:19:27 2018"
+[dumpfile_size] 19668
+[savefile] "C:\Users\palca\OneDrive\Documents\GitHub\CircuitosDigitales2\Tarea_8\RESULTADO.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-4.190932 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+contador_TB.clk
+contador_TB.reset_L
+contador_TB.enable
+@800022
+contador_TB.salida_gray_cond[4:0]
+@28
+(0)contador_TB.salida_gray_cond[4:0]
+(1)contador_TB.salida_gray_cond[4:0]
+(2)contador_TB.salida_gray_cond[4:0]
+(3)contador_TB.salida_gray_cond[4:0]
+(4)contador_TB.salida_gray_cond[4:0]
+@1001200
+-group_end
+@800023
+contador_TB.salida_gray_est[4:0]
+@29
+(0)contador_TB.salida_gray_est[4:0]
+(1)contador_TB.salida_gray_est[4:0]
+(2)contador_TB.salida_gray_est[4:0]
+(3)contador_TB.salida_gray_est[4:0]
+(4)contador_TB.salida_gray_est[4:0]
+@1001201
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

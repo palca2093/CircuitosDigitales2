@@ -1,0 +1,7 @@
+read_verilog Generator_cond.v
+hierarchy -check -top Generator_cond
+write_verilog rtlil.v
+dfflibmap -liberty cmos_cells.lib;
+abc -liberty cmos_cells.lib;
+clean
+write_verilog Generator_est.v
